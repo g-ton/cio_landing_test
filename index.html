@@ -13,38 +13,45 @@
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/favicon.png" rel="apple-touch-icon">
 
+  <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style_critical.min.css">
+  
   <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
-
-
+  <link rel="preload stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" as="font" onload="this.onload=null;this.rel='stylesheet'">
+  <!-- <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"></noscript> -->
+  <!-- <noscript><link rel="stylesheet" href="assets/vendor/boxicons/css/boxicons.min.css"></noscript>
+  <noscript><link rel="stylesheet" href="assets/vendor/venobox/venobox.css"></noscript>
+  <noscript><link rel="stylesheet" href="assets/vendor/aos/aos.css"></noscript>
+  <noscript><link rel="stylesheet" href="assets/vendor/owl.carousel/assets/owl.carousel.min.css"></noscript>
+  <noscript><link rel="stylesheet" href="assets/vendor/icofont/icofont.min.css"></noscript>
+  <noscript><link rel="stylesheet" href="assets/css/style.css"></noscript> -->
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link rel="preload stylesheet" href="assets/vendor/boxicons/css/boxicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+  <link rel="preload stylesheet" href="assets/vendor/venobox/venobox.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+  <link rel="preload stylesheet" href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+  <link rel="preload stylesheet" href="assets/vendor/aos/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+  <link rel="preload stylesheet" href="assets/vendor/icofont/icofont.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+  <link rel="preload stylesheet" href="assets/css/style.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+  <!-- No crítico -->
+  <!-- <link rel="preload stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css" as="styles">
+  <link rel="preload stylesheet" href="assets/vendor/icofont/icofont.min.css" as="styles"> -->
+
+
+
+  
+  
 
 
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
   <!-- Bootstrap Form Helpers -->
-  <link href="assets/vendor/bootstrap/css/bootstrap-formhelpers.min.js" rel="stylesheet" media="screen">
-
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="assets/js/google.js"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8HGJ3CPTTR');
-</script>
 
 
 </head>
@@ -210,11 +217,11 @@
           <section class="seccion panel" style="background: #152964 !important;">
             <section id="fondo2" class="seccion panel green">
             </section>
-            <img id="laptop" src="assets/img/laptop.png">
+            <img id="laptop" data-src="assets/img/laptop.png" class="lazyload">
           </section>
         </div>
         <div id="laptablet">
-          <img src="assets/img/laptop.png">
+          <img data-src="assets/img/laptop.png" class="lazyload">
         </div>
       </div>
 
@@ -239,7 +246,7 @@
             <div class="testimonial-item" data-aos="fade-up">
               <div class="box" data-aos="zoom-in">
                 <h3>CONVERSIÓN AUTOMÁTICA</h3>
-                <img src="assets/img/Caracteristicas/01.svg" height="128px" width="128px">
+                <img data-src="assets/img/Caracteristicas/01.svg" height="128px" width="128px" class="lazyload">
 
                 <p>Conversión automática de moneda extranjera a nacional dentro de uno o varios movimientos contables.
                 </p>
@@ -250,7 +257,7 @@
             <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
               <div class="box" data-aos="zoom-in">
                 <h3>CONTABILIDAD AL DÍA</h3>
-                <img src="assets/img/Caracteristicas/02.svg" height="128px" width="128px">
+                <img data-src="assets/img/Caracteristicas/02.svg" height="128px" width="128px" class="lazyload">
 
                 <p>Capaz de detectar cuando emitas una factura (De venta, Nota de crédito, Nómina o Complemento de pago)
                   pudiendo registrarla y contabilizarla de forma automática.</p>
@@ -261,7 +268,7 @@
             <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
               <div class="box" data-aos="zoom-in">
                 <h3>FACTURAS CANCELADAS</h3>
-                <img src="assets/img/Caracteristicas/03.svg" height="128px" width="128px">
+                <img data-src="assets/img/Caracteristicas/03.svg" height="128px" width="128px" class="lazyload">
 
                 <p>Con un simple clic podrás validar si tus facturas están canceladas ante el SAT, con la facilidad de
                   saber si tienen relacionado algún movimiento contable.</p>
@@ -272,7 +279,7 @@
             <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
               <div class="box" data-aos="zoom-in">
                 <h3>REPORTE DIOT</h3>
-                <img src="assets/img/Caracteristicas/04.svg" height="128px" width="128px">
+                <img data-src="assets/img/Caracteristicas/04.svg" height="128px" width="128px" class="lazyload">
 
                 <p>Generación de reporte DIOT en varios formatos. Además de entregar la DIOT en formato oficial TXT, CIO
                   es capaz de hacerlo en PDF y Excel, tomando como base los parámetros filtrados por el usuario.</p>
@@ -283,7 +290,7 @@
             <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
               <div class="box" data-aos="zoom-in">
                 <h3>PERMANECE TU IMAGEN CORPORATIVA</h3>
-                <img src="assets/img/Caracteristicas/05.svg" height="128px" width="128px">
+                <img data-src="assets/img/Caracteristicas/05.svg" height="128px" width="128px" class="lazyload">
 
                 <p>Porque sabemos lo importante que es la imagen para tu empresa, CIO permite la carga de tu logo, para
                   que cualquier reporte o impresión de información sea personalizada.</p>
@@ -294,7 +301,7 @@
             <div class="testimonial-item" data-aos="fade-up" data-aos-delay="500">
               <div class="box" data-aos="zoom-in">
                 <h3>MULTIUSUARIO</h3>
-                <img src="assets/img/Caracteristicas/06.svg" height="128px" width="128px">
+                <img data-src="assets/img/Caracteristicas/06.svg" height="128px" width="128px" class="lazyload">
 
                 <p>En CIO puedes crear los usuarios que necesites cuando lo requieras (sin costo extra).
                 </p>
@@ -306,7 +313,7 @@
             <div class="testimonial-item" data-aos="fade-up" data-aos-delay="500">
               <div class="box" data-aos="zoom-in">
                 <h3>CON UN CLIC</h3>
-                <img src="assets/img/Caracteristicas/07.svg" height="128px" width="128px">
+                <img data-src="assets/img/Caracteristicas/07.svg" height="128px" width="128px" class="lazyload">
 
                 <p>Puedes consultar el estatus de tus proveedores y clientes mediante el servicio de <a href="https://protectorfiscal.mx/"> <strong>PROTECTOR FISCAL</strong></a> sin ningún costo adicional desde nuestro sistema.
                 </p>
@@ -317,7 +324,7 @@
             <div class="testimonial-item" data-aos="fade-up" data-aos-delay="600">
               <div class="box" data-aos="zoom-in">
                 <h3>MIGRACIÓN RÁPIDA</h3>
-                <img src="assets/img/Caracteristicas/08.svg" height="128px" width="128px">
+                <img data-src="assets/img/Caracteristicas/08.svg" height="128px" width="128px" class="lazyload">
 
                 <p>Si ya te encuentras trabajando con un sistema contable, CIO te permite migrar tu información de una
                   forma rápida y sencilla.</p>
@@ -328,7 +335,7 @@
             <div class="testimonial-item" data-aos="fade-up" data-aos-delay="700">
               <div class="box" data-aos="zoom-in">
                 <h3>REPORTES SAT</h3>
-                <img src="assets/img/Caracteristicas/09.svg" height="128px" width="128px">
+                <img data-src="assets/img/Caracteristicas/09.svg" height="128px" width="128px" class="lazyload">
 
                 <p>Cumple con todos los Reportes oficiales del SAT.</p>
               </div>
@@ -347,8 +354,8 @@
       <div class="container">
         <div id="pinMaster">
           <div id="pinContainer">
-            <img id="myimg" src="assets/img/Laptop/0001.png"><br>
-            <img id="myimgtablet" src="assets/img/Laptop/0025.png"><br>
+            <img id="myimg" data-src="assets/img/Laptop/0001.png" class="lazyload"><br>
+            <img id="myimgtablet" data-src="assets/img/Laptop/0025.png" class="lazyload"><br>
           </div>
         </div>
       </div>
@@ -377,9 +384,9 @@
 
               <div>
                 <div class="count-box">
-                  <img class="imgfun" id="fun01" type="button" data-toggle="modal" data-target="#exampleModalCenter"
-                    src="assets/img/Funcionalidades/01.png" height="160px" width="150px"
-                    style="float:left; padding-right: 15px; " />
+                  <img id="fun01" type="button" data-toggle="modal" data-target="#exampleModalCenter"
+                    data-src="assets/img/Funcionalidades/01.png" height="160px" width="150px"
+                    style="float:left; padding-right: 15px; " class="lazyload imgfun"/>
                   <p><strong> <span>C</span>ONTABILIDAD INTELIGENTE</strong></p>
                   <span>ONLINE</span>
 
@@ -387,9 +394,9 @@
               </div>
               <div>
                 <div class="count-box">
-                  <img class="imgfun" id="fun02" type="button" data-toggle="modal" data-target="#exampleModalCenter"
-                    src="assets/img/Funcionalidades/02.png" height="160px" width="150px"
-                    style="float:left; padding-right: 15px; " />
+                  <img id="fun02" type="button" data-toggle="modal" data-target="#exampleModalCenter"
+                    data-src="assets/img/Funcionalidades/02.png" height="160px" width="150px"
+                    style="float:left; padding-right: 15px; " class="lazyload imgfun"/>
                   <p><strong> <span>G</span>ESTIÓN DE</strong></p>
                   <span>FACTURAS</span>
 
@@ -397,9 +404,9 @@
               </div>
               <div>
                 <div class="count-box">
-                  <img class="imgfun" id="fun03" type="button" data-toggle="modal" data-target="#exampleModalCenter"
-                    src="assets/img/Funcionalidades/03.png" height="160px" width="150px"
-                    style="float:left; padding-right: 15px; " />
+                  <img id="fun03" type="button" data-toggle="modal" data-target="#exampleModalCenter"
+                    data-src="assets/img/Funcionalidades/03.png" height="160px" width="150px"
+                    style="float:left; padding-right: 15px; " class="lazyload imgfun"/>
                   <p><strong> <span>T</span>RABAJO</strong></p>
                   <span>ÁGIL</span>
                 </div>
@@ -789,7 +796,7 @@
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
-      <img src="assets/img/LogoDorado.png" height="88px" width="239px">
+      <img data-src="assets/img/LogoDorado.png" height="88px" width="239px" class="lazyload">
       <div class="copyright">
         &copy; Copyright <strong>
           <span>
@@ -814,45 +821,32 @@
   </div>
   <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- DEFER! A script that will not run until after the page has loaded -->
   <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="assets/vendor/counterup/counterup.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js" defer></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js" defer></script>
+  <script src="assets/vendor/venobox/venobox.min.js" defer></script>
   <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/popper.min.js" defer></script>
 
 
-  <script src="assets/js/popper.min.js"></script>
-  
 
-  <script src="assets/js/bootstrap.min.js"></script>
-
-  <!-- Bootstrap Form Helpers -->
-
-  <script src="assets/js/bootstrap-formhelpers.min.js"></script>
-
-
-  <script src="assets/js/gsap/gsap.min.js"></script>
-  <script src="assets/js/gsap/TweenMax.min.js"></script>
+  <script src="assets/js/gsap/gsap.min.js" defer></script>
   <script src="assets/js/gsap/ScrollMagic.min.js"></script>
   <script src="assets/js/gsap/animation.gsap.min.js"> </script>
-  <script src="assets/js/gsap/debug.addIndicators.min.js"> </script>
   <script src="assets/js/script.js"></script>
-
-  <script>
-    function Funciones() { }
-    $(function () {
-
-    });
-
-  </script>
-
+  
+  <!-- Bootstrap Form Helpers -->
+  <script src="assets/js/bootstrap.min.js" defer></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+  <script src="assets/js/bootstrap-formhelpers.min.js" defer></script>
+  <script src="assets/js/gsap/TweenMax.min.js" defer></script>
+  <script src="assets/js/lazysizes.min.js" async></script>
 </body>
 
 </html>
